@@ -1,0 +1,14 @@
+{
+  "name": "quotes",
+  "version": "1.0.0",
+  "description": "Thought for The Day!",
+  "main": "tftd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anantha Natarajan S",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.0.0"
+  }
+}
