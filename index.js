@@ -1,11 +1,11 @@
 var request = require('request'),
     $ = require('cheerio'),
     chalk = require('chalk'),
-    quotesDB = require('./my.json'),
+    quotesDB = require('./quotes.json'),
     fs = require('fs');
 
 function appendJSON(q){
-	var outputFilename = './my.json';
+	var outputFilename = './quotes.json';
 
 	fs.writeFile(outputFilename, JSON.stringify(q, null, 4), function(err) {
 	    if(err) {
@@ -48,7 +48,7 @@ function randomIndex(len){
 
 console.log(chalk.underline.blue.bold("\nQuote of the day\n"));
 
-request.get("http://wwwasd.brainyquote.com/quotes_of_the_day.html",function(error, res, json){
+request.get("http://www.brainyquote.com/quotes_of_the_day.html",function(error, res, json){
 	if ( error || res.statusCode != 200) {
 		
 		var index = randomIndex(quotesDB.length - 1);
@@ -59,7 +59,7 @@ request.get("http://wwwasd.brainyquote.com/quotes_of_the_day.html",function(erro
 		     ''
 		    ].join('\n'));	
 
-		console.log(chalk.white("Oops! Coudn't update DB."));
+		console.log(chalk.whitebg("Oops! Coudn't update DB."));
 
 		return;
 	}

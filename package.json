@@ -1,6 +1,6 @@
 {
   "name": "quotes",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Thought for The Day!",
   "main": "tftd.js",
   "scripts": {
