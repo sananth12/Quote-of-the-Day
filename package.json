@@ -1,8 +1,8 @@
 {
-  "name": "quotes",
+  "name": "quoter",
   "version": "0.1.0",
-  "description": "Thought for The Day!",
-  "main": "tftd.js",
+  "description": "Quote of the Day!",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
