@@ -6,6 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "quoter": "cli.js"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
   "author": "Anantha Natarajan S",
   "license": "MIT",
   "dependencies": {
