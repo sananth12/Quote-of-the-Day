@@ -94,7 +94,7 @@ module.exports = function(latest){
 	else{
 				var index = randomIndex(quotesDB.length - 1);
 				printQuote(quotesDB[index]["quote"], quotesDB[index]["author"]);
-				console.log(chalk.white("Oops! Coudn't update DB."));
+				//console.log(chalk.white("Oops! Coudn't update DB."));
 
 	}
 }
